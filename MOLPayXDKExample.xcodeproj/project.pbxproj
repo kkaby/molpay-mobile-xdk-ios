@@ -13,8 +13,8 @@
 		EB2625A11C80403200BE895D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB26259F1C80403200BE895D /* Main.storyboard */; };
 		EB2625A31C80403200BE895D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2625A21C80403200BE895D /* Assets.xcassets */; };
 		EB2625A61C80403200BE895D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2625A41C80403200BE895D /* LaunchScreen.storyboard */; };
-		EB41A65C1C9BDC0900ABC54F /* MOLPayXDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB41A65A1C9BDC0900ABC54F /* MOLPayXDK.bundle */; };
-		EB41A65D1C9BDC0900ABC54F /* MOLPayXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB41A65B1C9BDC0900ABC54F /* MOLPayXDK.framework */; };
+		EB69EA361CD89352006985C3 /* MOLPayXDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB69EA341CD89352006985C3 /* MOLPayXDK.bundle */; };
+		EB69EA371CD89352006985C3 /* MOLPayXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB69EA351CD89352006985C3 /* MOLPayXDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		EB2625A21C80403200BE895D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2625A51C80403200BE895D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2625A71C80403200BE895D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB41A65A1C9BDC0900ABC54F /* MOLPayXDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MOLPayXDK.bundle; sourceTree = "<group>"; };
-		EB41A65B1C9BDC0900ABC54F /* MOLPayXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOLPayXDK.framework; sourceTree = "<group>"; };
+		EB69EA341CD89352006985C3 /* MOLPayXDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MOLPayXDK.bundle; sourceTree = "<group>"; };
+		EB69EA351CD89352006985C3 /* MOLPayXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOLPayXDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB41A65D1C9BDC0900ABC54F /* MOLPayXDK.framework in Frameworks */,
+				EB69EA371CD89352006985C3 /* MOLPayXDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +47,8 @@
 		EB26258A1C80403200BE895D = {
 			isa = PBXGroup;
 			children = (
-				EB41A65A1C9BDC0900ABC54F /* MOLPayXDK.bundle */,
-				EB41A65B1C9BDC0900ABC54F /* MOLPayXDK.framework */,
+				EB69EA341CD89352006985C3 /* MOLPayXDK.bundle */,
+				EB69EA351CD89352006985C3 /* MOLPayXDK.framework */,
 				EB2625951C80403200BE895D /* MOLPayXDKExample */,
 				EB2625941C80403200BE895D /* Products */,
 			);
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2625A61C80403200BE895D /* LaunchScreen.storyboard in Resources */,
-				EB41A65C1C9BDC0900ABC54F /* MOLPayXDK.bundle in Resources */,
+				EB69EA361CD89352006985C3 /* MOLPayXDK.bundle in Resources */,
 				EB2625A31C80403200BE895D /* Assets.xcassets in Resources */,
 				EB2625A11C80403200BE895D /* Main.storyboard in Resources */,
 			);
