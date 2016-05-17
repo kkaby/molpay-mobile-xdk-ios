@@ -15,6 +15,7 @@
 		EB2625A61C80403200BE895D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2625A41C80403200BE895D /* LaunchScreen.storyboard */; };
 		EB69EA361CD89352006985C3 /* MOLPayXDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EB69EA341CD89352006985C3 /* MOLPayXDK.bundle */; };
 		EB69EA371CD89352006985C3 /* MOLPayXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB69EA351CD89352006985C3 /* MOLPayXDK.framework */; };
+		EB844ED81CEB0063009870D6 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = EB844ED71CEB0063009870D6 /* custom.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EB2625A71C80403200BE895D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB69EA341CD89352006985C3 /* MOLPayXDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MOLPayXDK.bundle; sourceTree = "<group>"; };
 		EB69EA351CD89352006985C3 /* MOLPayXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOLPayXDK.framework; sourceTree = "<group>"; };
+		EB844ED71CEB0063009870D6 /* custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		EB2625951C80403200BE895D /* MOLPayXDKExample */ = {
 			isa = PBXGroup;
 			children = (
+				EB844ED71CEB0063009870D6 /* custom.css */,
 				EB2625991C80403200BE895D /* AppDelegate.h */,
 				EB26259A1C80403200BE895D /* AppDelegate.m */,
 				EB26259C1C80403200BE895D /* ViewController.h */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2625A61C80403200BE895D /* LaunchScreen.storyboard in Resources */,
+				EB844ED81CEB0063009870D6 /* custom.css in Resources */,
 				EB69EA361CD89352006985C3 /* MOLPayXDK.bundle in Resources */,
 				EB2625A31C80403200BE895D /* Assets.xcassets in Resources */,
 				EB2625A11C80403200BE895D /* Main.storyboard in Resources */,
