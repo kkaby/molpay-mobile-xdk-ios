@@ -9,6 +9,15 @@
 #import "ViewController.h"
 #import <MOLPayXDK/MOLPayLib.h>
 
+@implementation NSURLRequest (NSURLRequestWithIgnoreSSL)
+
++ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString *)host
+{
+    return YES;
+}
+
+@end
+
 @interface ViewController () <MOLPayLibDelegate>
 {
     MOLPayLib *mp;
@@ -22,29 +31,25 @@
     [super viewDidAppear:animated];
     
     NSDictionary * paymentRequestDict = @{
-                                          @"mp_amount": @"", // Mandatory
-                                          @"mp_username": @"", // Mandatory
-                                          @"mp_password": @"", // Mandatory
-                                          @"mp_merchant_ID": @"", // Mandatory
-                                          @"mp_app_name": @"", // Mandatory
-                                          @"mp_order_ID": @"", // Mandatory
-                                          @"mp_currency": @"", // Mandatory
-                                          @"mp_country": @"", // Mandatory
-                                          @"mp_verification_key": @"", // Mandatory
-                                          @"mp_channel": @"", // Optional
-                                          @"mp_bill_description": @"", // Optional
-                                          @"mp_bill_name": @"", // Optional
-                                          @"mp_bill_email": @"", // Optional
-                                          @"mp_bill_mobile": @"", // Optional
-                                          @"mp_channel_editing": [NSNumber numberWithBool:NO], // Optional
-                                          @"mp_editing_enabled": [NSNumber numberWithBool:NO], // Optional
+                                          @"mp_amount": @"1.10",                // Mandatory
+                                          @"mp_username": @"api_MOLWallet_Dev3",         // Mandatory
+                                          @"mp_password": @"api_walletdev3",      // Mandatory
+                                          @"mp_merchant_ID": @"MOLWallet_Dev3", // Mandatory
+                                          @"mp_app_name": @"ahkl03",      // Mandatory
+                                          @"mp_order_ID": @"MOLPAYTEST",             // Mandatory
+                                          @"mp_currency": @"MYR",               // Mandatory
+                                          @"mp_country": @"MY",                 // Mandatory
+                                          @"mp_verification_key": @"526cf83bd534609be4ba7df469f43aa1",  // Mandatory
+                                          @"mp_channel": @"",              // Mandatory    //maybank2u //credit //fpx //bankislam
+                                          @"mp_bill_description": @"Demo payment",  // Mandatory
+                                          @"mp_bill_name": @"Developer",                // Mandatory
+                                          @"mp_bill_email": @"mobile@molpay.com",        // Mandatory
+                                          @"mp_bill_mobile": @"+0123456789",                // Mandatory
+                                          @"mp_channel_editing": [NSNumber numberWithBool:NO],  // Optional
+                                          @"mp_editing_enabled": [NSNumber numberWithBool:NO],  // Optional
                                           @"mp_transaction_id": @"", // Optional for transactionRequest
-                                          @"mp_request_type": @"" // Optional, set 'Status' when performing a transactionRequest
-                                          //@"mp_bin_lock": [NSArray arrayWithObjects:@"414170", @"414171", nil], // Optional for credit card BIN restrictions
-                                          //@"mp_bin_lock_err_msg": @"Only UOB allowed" // Optional for credit card BIN restrictions
-                                          //@"mp_is_escrow": @"" // Optional for escrow
-                                          //@"mp_filter": @"", // Optional for debit card transactions only
-                                          //@"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil] // Optional for custom UI
+                                          @"mp_request_type": @"",
+                                          @"domain_mode": @"1"
                                           };
     
     mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
